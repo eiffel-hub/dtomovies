@@ -1,0 +1,118 @@
+body { 
+  font-family: 'Arial', sans-serif; 
+  margin: 0; 
+  padding: 0; 
+  background-color: #f4f4f4; 
+  color: #333; 
+  display: flex; 
+  flex-direction: column; 
+  min-height: 100vh; 
+} 
+
+.container { 
+  max-width: 960px; 
+  margin: 0 auto; 
+  padding: 20px; 
+} 
+
+header { 
+  background-color: #222; 
+  color: #fff; 
+  padding: 20px 0; 
+  text-align: center; 
+} 
+
+header h1 { 
+  margin: 0; 
+  font-size: 2.5em; 
+} 
+
+
+.hero { 
+  background-color: #fff; 
+  padding: 20px 0; 
+  text-align: center; 
+} 
+
+.hero img { 
+  max-width: 100%; 
+  height: auto; 
+} 
+
+.content { 
+  background-color: #fff; 
+  padding: 20px 0; 
+  text-align: center; 
+} 
+
+.content h2 { 
+  font-size: 1.5em; 
+  margin-bottom: 20px; 
+} 
+
+/* Estilo moderno y minimalista para la lista de navegación */
+.nav { 
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 15px; /* Espaciado entre botones */
+}
+
+.nav li { 
+  display: inline-block; /* Cambiado de inline a inline-block para mejor manejo en móviles */
+}
+
+.nav a { 
+  text-decoration: none; 
+  color: #333; 
+  font-weight: 500; 
+  padding: 12px 20px; /* Ajuste de padding para mayor área clicable */
+  border-radius: 4px; 
+  background-color: #e0e0e0; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  font-size: 0.9rem; 
+}
+
+.nav a:hover { 
+  background-color: #d5d5d5; 
+  color: #000; 
+  transform: translateY(-2px); 
+}
+
+footer { 
+  background-color: #222; 
+  color: #fff; 
+  padding: 20px 0; 
+  text-align: center; 
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  .content h2 {
+    font-size: 1.2em;
+  }
+
+  .nav {
+    flex-direction: column; /* Cambiar a columna en móviles */
+    align-items: center; /* Centrar elementos */
+    gap: 12px; /* Espaciado reducido pero suficiente entre botones */
+  }
+
+  .nav li {
+    width: 100%; /* Asegura que cada botón ocupe el 100% del ancho disponible */
+    text-align: center; /* Centra el texto dentro del botón */
+  }
+
+  .nav a {
+    width: 90%; /* Asegura que el botón tenga un ancho adecuado */
+    display: block; /* Hace que el enlace ocupe el ancho completo del elemento li */
+    margin: 0 auto; /* Centra el botón horizontalmente */
+  }
+}
